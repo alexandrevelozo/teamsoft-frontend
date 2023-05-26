@@ -6,17 +6,30 @@ import {
   Adress,
   Search,
   BoxUser,
+  BackButton,
 } from "./styles";
 
 import LogoDeliverize from "../../assets/icons/logo.png";
 import IconArrowDown from "../../assets/icons/arrow_down.png";
 import IconAccount from "../../assets/icons/account_circle.svg";
 import IconCart from "../../assets/icons/shopping_cart.svg";
+import BackIcon from "../../assets/icons/back_icon.png";
 
 export const Header = () => {
   return (
     <Container>
       <Wrapper>
+        <BackButton>
+          <img
+            style={{
+              width: "26px",
+              height: "26px",
+              cursor: "pointer",
+            }}
+            src={BackIcon}
+            alt="Voltar"
+          />
+        </BackButton>
         <Logo>
           <img src={LogoDeliverize} alt="Deliverize" />
         </Logo>

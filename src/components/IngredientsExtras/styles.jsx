@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 0.6rem;
 
   padding: 0 1rem;
-
-  gap: 0.6rem;
 
   label {
     font-size: 0.875rem;
@@ -20,27 +19,6 @@ export const Container = styled.div`
   }
 
   i {
-    border-bottom: 1px solid #f09035;
+    border-bottom: 1px solid var(--color-primary);
   }
-`;
-
-export const Title = styled.div`
-  padding: 10px 16px 28px 16px;
-  margin-right: 10px;
-  background: #fdd70e33;
-
-  span {
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: #4e4e4e;
-  }
-`;
-
-export const InputCutlery = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  margin-right: 10px;
 `;

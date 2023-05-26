@@ -12,10 +12,10 @@ export const Container = styled.div`
   margin-left: auto;
   padding: 0.25rem 0.5rem;
 
-  border: 1px solid #f09035;
+  border: 1px solid var(--color-primary);
   border-radius: 5px;
 
-  .item-zerado {
+  .item-reset {
     filter: sepia(100%) hue-rotate(210deg) brightness(200%);
   }
 
@@ -37,7 +37,7 @@ export const Container = styled.div`
 
   input {
     width: 25px;
-    color: #4e4e4e;
+    color: var(--color-text);
     text-align: center;
     font-size: 0.875rem;
   }

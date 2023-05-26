@@ -25,9 +25,14 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --color-primary: #F09035;
     --color-secondary: #FFA000;
+    --color-terciary: #FFFFFF;
+    --color-background-white: #F8F8F8;
     
     --color-text: #4E4E4E;
     --color-text-white: #FFFFFF;
+    --color-text-red: #BC2E31;
+
+    --color-border-input: #FEBC10;
     
   }
 

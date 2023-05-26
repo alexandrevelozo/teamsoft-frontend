@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   width: 100%;
+
   background-color: #f4f4f4;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 `;
 
 export const Wrapper = styled.div`
@@ -20,27 +22,47 @@ export const Wrapper = styled.div`
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    background-color: blue;
     height: 56px;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
   }
 `;
 
 export const Logo = styled.div`
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    img {
+      width: 150px;
+      height: 32px;
+    }
+  }
+`;
+
+export const BackButton = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px;
+  }
 `;
 
 export const BoxAdress = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: end;
-
-  width: 100%;
-
   gap: 1.5rem;
 
+  width: 100%;
   padding: 0 1.65rem 0 1.65rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `;
@@ -50,13 +72,13 @@ export const Adress = styled.div`
   flex-direction: column;
   justify-content: center;
 
+  background: var(--color-terciary);
+
   width: 100%;
-  max-width: 14rem;
   height: 3rem;
+  max-width: 14rem;
 
   padding: 0 1rem 0 0.5rem;
-
-  background: #ffffff;
 
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -85,7 +107,7 @@ export const Search = styled.input`
 
   padding: 0 1rem;
 
-  background: #ffffff;
+  background: var(--color-terciary);
 
   border: 1px solid #ed3237;
   border-radius: 4px;
@@ -100,7 +122,6 @@ export const Search = styled.input`
 export const BoxUser = styled.div`
   display: flex;
   flex-direction: row;
-
   gap: 26px;
 
   button {
@@ -125,7 +146,7 @@ export const BoxUser = styled.div`
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: #f09035;
+    background-color: var(--color-primary);
     color: white;
     width: 18px;
     height: 18px;
@@ -135,8 +156,6 @@ export const BoxUser = styled.div`
     justify-content: center;
     font-size: 0.75rem;
   }
-
-  // media
 
   @media (max-width: 768px) {
     display: none;

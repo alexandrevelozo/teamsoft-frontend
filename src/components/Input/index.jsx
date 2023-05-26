@@ -18,7 +18,7 @@ const Input = ({ width, height }) => {
     }
   };
 
-  const itemClasses = value === 0 ? "item-zerado" : "";
+  const itemClasses = value === 0 ? "item-reset" : "";
 
   return (
     <Container width={width} height={height}>
