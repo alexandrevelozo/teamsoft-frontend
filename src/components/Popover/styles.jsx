@@ -10,7 +10,7 @@ export const Container = styled.div`
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", Roboto, sans-serif;
   z-index: 100;
 
   .arrow {
