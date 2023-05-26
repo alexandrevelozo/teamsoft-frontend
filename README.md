@@ -15,6 +15,8 @@
     <img alt="Alexandre Velozo" src="https://img.shields.io/badge/-alexandrevelozo4%40gmail.com-F09035?style=flat&logo=Gmail&logoColor=white" />
   </a>
   
+  <p>Link Vercel deploy: <br> https://deliverize-ts.vercel.app/</p>
+
 </div>
 
 <br>
